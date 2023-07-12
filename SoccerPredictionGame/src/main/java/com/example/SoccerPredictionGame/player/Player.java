@@ -1,4 +1,4 @@
-package com.example.SoccerPredictionGame.user;
+package com.example.SoccerPredictionGame.player;
 
 import jakarta.persistence.*;
 

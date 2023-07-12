@@ -1,9 +1,7 @@
-package com.example.SoccerPredictionGame.user;
+package com.example.SoccerPredictionGame.player;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,8 +16,13 @@ public class PlayerController {
     }
 
     @GetMapping
-    public List<Player> getUsers(){
+    public List<Player> getPlayers(){
         return playerService.getPlayers();
+    }
+
+    @PostMapping
+    public void registerPlayer(@RequestBody Player player) {
+        playerService.addNewPlayer(player);
     }
 
 }

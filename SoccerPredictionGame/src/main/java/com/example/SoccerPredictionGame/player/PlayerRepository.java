@@ -1,0 +1,12 @@
+package com.example.SoccerPredictionGame.player;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+/*
+Repo used to access the data
+ */
+@Repository
+public interface PlayerRepository
+        extends JpaRepository<Player, Long> {
+}
