@@ -9,17 +9,17 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/soccer")
-public class UserController {
+public class PlayerController {
 
-    private final UserService userService;
+    private final PlayerService playerService;
     @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
+    public PlayerController(PlayerService playerService) {
+        this.playerService = playerService;
     }
 
     @GetMapping
-    public List<User> getUsers(){
-        return userService.getUsers();
+    public List<Player> getUsers(){
+        return playerService.getPlayers();
     }
 
 }
