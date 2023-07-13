@@ -13,6 +13,9 @@ public class PlayerService {
         this.playerRepository = playerRepository;
     }
 
+    /*
+    Needed to find all players in database
+     */
     public List<Player> getPlayers() {
         return playerRepository.findAll();
     }
