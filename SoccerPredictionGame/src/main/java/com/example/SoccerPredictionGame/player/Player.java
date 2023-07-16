@@ -19,7 +19,7 @@ public class Player {
             generator = "player_sequence"
     )
     private Long id;
-    private String playerName;
+    private String userName;
     private String password;
     private Integer currency;
 
@@ -27,31 +27,31 @@ public class Player {
     }
 
     public Player(Long id,
-                  String playerName,
+                  String userName,
                   String password,
                   Integer currency
                 ) {
-        this.playerName = playerName;
+        this.userName = userName;
         this.password = password;
         this.currency = currency;
         this.id = id;
     }
 
-    public Player(String playerName,
+    public Player(String userName,
                   String password,
                   Integer currency
                 ) {
-        this.playerName = playerName;
+        this.userName = userName;
         this.password = password;
         this.currency = currency;
     }
 
-    public String getPlayerName() {
-        return playerName;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setPlayerName(String userName) {
-        this.playerName = userName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -84,7 +84,7 @@ public class Player {
                 "id='" + id + '\'' +
                 ", password='" + password + '\'' +
                 ", currency=" + currency +
-                ", playerName='" + playerName +
+                ", playerName='" + userName +
                 '}';
     }
 }
