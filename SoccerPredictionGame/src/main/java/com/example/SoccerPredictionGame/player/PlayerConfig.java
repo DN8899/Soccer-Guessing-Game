@@ -8,7 +8,7 @@ import java.util.List;
 
 @Configuration
 public class PlayerConfig {
-    @Bean
+    //@Bean
     CommandLineRunner commandLineRunner(
             PlayerRepository repository) {
         return args -> {
