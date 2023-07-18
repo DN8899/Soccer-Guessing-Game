@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 @Entity
 @Table
 public class Player {
-    @Id
+
     @SequenceGenerator(
             name = "player_sequence",
             sequenceName = "player_sequence",
@@ -18,6 +18,7 @@ public class Player {
             strategy = GenerationType.SEQUENCE,
             generator = "player_sequence"
     )
+    @Id
     private Long id;
     private String userName;
     private String password;
